@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgba(96, 79, 252, 0.082) white);
+    background: linear-gradient(rgba(96, 79, 252, 0.082), white);
 }
 
 .board:hover {
@@ -35,6 +35,7 @@
 .title {
     display: flex;
     justify-content: center; 
+    margin-top: -10px;
 }
 
 button {
@@ -47,7 +48,7 @@ button {
     transition: all 0.2s;
 }
 
-button.hover {
+button:hover {
     cursor: pointer;
 }
 
@@ -64,6 +65,17 @@ button.hover {
 .blackButton:hover {
     background-color: white;
     color: black;
+
+}
+
+.grayButton {
+    background-color: rgb(128, 128, 128, 0.411);
+    color: black;
+}
+
+.grayButton:hover {
+    background-color: rgb(95, 95, 95);
+    color: white;
 }
 
 .randomButton {
@@ -80,5 +92,18 @@ button.hover {
 }
 
 .eraserButton:hover {
-    
+
+}
+
+input {
+    width: 50px;
+}
+
+.mode {
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.error {
+    display: none;
 }
